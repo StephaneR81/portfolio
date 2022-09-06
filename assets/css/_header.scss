@@ -1,0 +1,170 @@
+//Imports
+
+//##########
+//# MOBILE #
+//##########
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    // background-color: $dark-blue;
+    background-color: $dark-blue;
+    color: $white;
+
+    //Header title wrapper (menu icons) MOBILE
+    &__title {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 10px;
+        min-height: 55px;
+    }
+
+    //Menu icon
+    &__label {
+        display: inline-block;
+        font-size: 35px;
+
+        //Menu icon :hover
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    //Header navigation menu (hidden with max-height:0;)
+    &__nav {
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.5s;
+        background-color: $light-blue;
+
+        //Menu list
+        ul {
+            display: flex;
+            flex-flow: column wrap;
+            width: 100%;
+            padding: 10px 0;
+            border-top: 1px solid $white;
+        }
+
+        //Menu items
+        li {
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+
+        //Menu links
+        a {
+            width: fit-content;
+            display: block;
+            padding: 5px;
+            padding-left: 5px;
+            border-bottom: 1px solid transparent;
+            color: $white;
+            font-size: 18px;
+            font-weight: 100;
+            text-transform: uppercase;
+            transition: all 0.3s;
+
+            //Menu items icon
+            i {
+                margin-right: 10px;
+            }
+
+            //Menu link :hover
+            &:hover {
+                font-weight: 400;
+                padding-left: 20px;
+                border-bottom: 1px solid $white;
+            }
+        }
+    }
+
+    //Hidden checkbox that controls the menu visibility
+    &__checkbox {
+        visibility: hidden;
+
+        //Showing the menu when the checkbox is checked
+        &:checked+.header__nav {
+            max-height: 300px;
+        }
+    }
+
+    //Classes for showing or not the menu element (active inactive)
+    .active {
+        display: block;
+    }
+
+    .inactive {
+        display: none;
+    }
+
+    //Alternative menu arrow icon animation
+    .fa-circle-arrow-up {
+
+        @include animationMenuArrow;
+    }
+
+    //Alternative menu bars icon animation
+    .fa-bars {
+
+        @include animationMenuBars;
+    }
+}
+
+//##########
+//# TABLET #
+//##########
+// @media screen and (min-width:768px) {}
+
+//###########
+//# DESKTOP #
+//###########
+@media screen and (min-width:1024px) {
+    .header {
+
+        //Menu icons wrapper DESKTOP
+        &__title {
+            display: none;
+        }
+
+        //Menu icons DESKTOP
+        &__label {
+            display: none;
+        }
+
+        //Menu DESKTOP
+        &__nav {
+            max-height: fit-content;
+
+            //Menu list DESKTOP
+            ul {
+                flex-flow: row wrap;
+                justify-content: flex-end;
+                align-items: center;
+                border-top: 1px solid transparent;
+            }
+
+            //Menu items DESKTOP
+            li {
+                margin: 0;
+                min-width: 200px;
+            }
+
+            //Menu links DESKTOP
+            a {
+                display: block;
+                font-weight: 400;
+                margin: 0 20px 0 20px;
+                border-bottom: 2px solid transparent;
+
+                //Menu links :hover DESKTOP
+                &:hover {
+                    padding-left: 5px;
+                    border-bottom: 2px solid $white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,437 @@
+//##########
+//# MOBILE #
+//##########
+.main {
+
+    //Main sections
+    section {
+        position: relative;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        min-height: 200px;
+        padding: 10px;
+        border-bottom: 1px solid $gray;
+        background-color: $white;
+
+        //Section H3 title
+        h3 {
+            margin: 15px 0;
+            padding: 5px;
+            font-size: 28px;
+            font-weight: bold;
+            color: $dark-blue;
+            width: 100%;
+        }
+
+        //Section H3 title icon
+        i {
+            display: inline;
+            padding-left: 15px;
+            color: $dark-blue;
+            font-size: 30px;
+        }
+
+        // Section links
+        a {
+            color: $dark-blue;
+            text-decoration: underline;
+        }
+
+        strong {
+            color: $dark-blue;
+        }
+    }
+
+    //Section about
+    .about {
+        flex-flow: row wrap;
+        background-color: $section-bg-blue;
+
+        //Profile picture
+        img {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid $dark-blue;
+        }
+
+        //Main page title H1
+        h1 {
+            margin-top: 15px;
+            font-size: 33px;
+            font-weight: 700;
+            color: $dark-blue;
+            text-shadow: 1px 1px 1px $white;
+        }
+
+        //Main page title H2
+        h2 {
+            margin-bottom: 15px;
+            font-size: 25px;
+            text-align: center;
+            color: $dark-blue;
+            text-shadow: 1px 1px 1px $white;
+
+        }
+    }
+
+    //Section introduction
+    .introducing {
+        padding-bottom: 150px;
+
+        img {
+            display: none;
+        }
+
+        p {
+            padding: 10px;
+        }
+    }
+
+    //Section skills
+    .skills {
+        background-color: $section-bg;
+
+        //Section skills title H4
+        h4 {
+            margin-top: 50px;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 25px;
+            font-weight: bold;
+            color: $dark-blue;
+            text-shadow: 1px 1px 1px $white;
+        }
+
+        //Section skills paragraph
+        p {
+            padding: 10px;
+        }
+    }
+
+    //Style for one skill (Langages, Frameworks, Bases de données, Autres)
+    .skill {
+        display: flex;
+        flex-flow: column nowrap;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid $gray;
+        // box-shadow: 1px 1px 15px $gray;
+        background-color: $white;
+
+        //Skill title (HTML5, CSS3, SASS...)
+        h5 {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: $dark-blue;
+        }
+
+        //Progress bar container
+        .progress-container {
+            height: 15px;
+            width: 50%;
+            margin-top: 5px;
+            border: 1px solid $light-gray;
+            background-color: $progress-bg;
+        }
+
+        //Progress bar inner container
+        .progress {
+            height: 100%;
+            background-image: $progress-color;
+        }
+    }
+
+    //Section achievements
+    .achievements {
+        p {
+            padding: 10px;
+        }
+    }
+
+    //Achievements cards wrapper
+    .cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+        //Achievement card
+        .card {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            height: 500px;
+            max-height: 500px;
+            margin: 10px 10px 30px 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+            //Achievement cart :hover
+            &:hover {
+                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            }
+
+            //Achievement card picture wrapper
+            .img-wrapper {
+                overflow: hidden;
+                max-width: 300px;
+                max-height: 300px;
+
+                //Pseudo element ::before (Open in a new tab)
+                &::before {
+                    visibility: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 3px;
+                    left: 3px;
+                    z-index: 1;
+                    width: 35px;
+                    height: 35px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    color: $white;
+                    font-size: 20px;
+                    font-family: fontawesome;
+                    content: '\f35d';
+                }
+
+                //Show ::before pseudo element (Open in new tab)
+                &:hover::before {
+                    visibility: visible;
+                }
+            }
+
+            //Achievement card picture
+            img {
+                display: inline-block;
+                position: relative;
+                width: 300px;
+                height: 300px;
+                object-fit: cover;
+                filter: brightness(85%);
+                transition: all 0.3s ease-in-out;
+
+                //Achievement card picture :hover
+                &:hover {
+                    transform: scale(1.05);
+                    filter: brightness(100%);
+                }
+            }
+
+            //Achievement card H4 title (Booki, ohmyfood...)
+            h4 {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                padding: 10px 0;
+                font-size: 25px;
+                font-weight: 700;
+                text-align: center;
+                background-color: $dark-blue;
+                color: $white;
+            }
+
+            //Achievement card H5 subtitle
+            h5 {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+
+                padding: 5px;
+                font-size: 20px;
+                color: $dark-blue;
+                text-align: center;
+            }
+
+            //Hidden card details (see more)
+            .card-details {
+                height: 500px;
+                padding: 0 5px;
+                overflow: hidden;
+                background-color: $white;
+                transform: translateY(65px);
+                transition: all 0.9s ease-in-out;
+
+                //Show hidden card details
+                &:hover {
+                    cursor: pointer;
+                    transform: translateY(-395px);
+                }
+
+                //"See more" icon (+)
+                i {
+                    display: inline-block;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    padding: 10px 0;
+                    font-size: 25px;
+                    font-weight: 100;
+                    font-family: fontawesome;
+                    text-align: center;
+                    color: $dark-blue;
+                    border-bottom: 1px solid $light-gray;
+                }
+
+                //Card details title
+                h6 {
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 20px;
+                    font-size: 17px;
+                    margin-bottom: 20px;
+                    color: $dark-blue;
+                    text-transform: uppercase;
+                }
+
+                //Subtitle (Compétences évaluées : )
+                .card-details-subtitle {
+                    margin-bottom: 15px;
+                    padding: 0;
+                    padding-left: 30px;
+                    color: $dark-blue;
+                    font-size: 18px;
+                }
+
+                ul {
+                    list-style-type: square;
+                    padding-left: 30px;
+
+                    li {
+                        margin-bottom: 10px;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//##########
+//# TABLET #
+//##########
+@media screen and (min-width:768px) {
+    .main {
+        section {
+            h3 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 22px;
+            }
+        }
+
+        //Achievements section TABLET
+        .introducing {
+
+            .section-container {
+                display: flex;
+                flex-flow: column nowrap;
+            }
+
+            &__paragraph {
+                display: flex;
+                flex-flow: row nowrap;
+                margin: 20px auto;
+                height: max-content;
+            }
+
+            img {
+                display: block;
+                min-width: 190px;
+                object-fit: cover;
+                border-right: 10px solid $white;
+                border-image: linear-gradient($light-blue, $white) 1;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            &__paragraph:nth-child(2),
+            &__paragraph:nth-child(4) {
+                flex-direction: row-reverse;
+
+                img {
+                    border-right: none;
+                    border-left: 10px solid $white;
+                }
+            }
+        }
+
+        .skills {
+            h4 {
+                font-size: 33px;
+            }
+
+            h5 {
+                font-size: 23px;
+            }
+        }
+
+        .achievements {
+            h3 {
+                max-width: unset;
+            }
+
+            p {
+                width: 100%;
+                max-width: unset;
+            }
+        }
+    }
+}
+
+
+//###########
+//# DESKTOP #
+//###########
+@media screen and (min-width:1024px) {
+    .main {
+
+        //Main sections title DESKTOP
+        section {
+            h3 {
+                margin: 80px 0 40px 0;
+                text-align: center;
+                font-size: 40px;
+            }
+        }
+
+        //Main page titles H1 and H2 DESKTOP
+        .about {
+            h1 {
+                font-size: 50px;
+            }
+
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+        //Achievements section DESKTOP
+        .achievements {
+            .cards {
+                margin-top: 50px;
+            }
+
+            //Achievements section paragraph
+            p {
+                margin: 0;
+            }
+        }
+    }
+}

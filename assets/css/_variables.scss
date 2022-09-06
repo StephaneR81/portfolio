@@ -1,0 +1,12 @@
+$white: #FFF;
+$light-gray: #F1F1F1;
+$gray: #E1E1E1;
+$blue: #4682b9;
+$dark-blue: darken($blue, 10%);
+$light-blue: lighten($dark-blue, 4%);
+$section-bg :#EAEDED;
+$section-bg-blue : lighten($blue, 45%);
+$progress-color: linear-gradient(to bottom, #135aa5, #6dc7ff);
+$progress-bg: $light-gray;
+
+

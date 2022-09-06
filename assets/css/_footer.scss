@@ -1,0 +1,125 @@
+//Imports
+
+//##########
+//# MOBILE #
+//##########
+.footer {
+    position: relative;
+    margin-top: 50px;
+    min-height: 100px;
+    background-color: $dark-blue;
+    color: $white;
+
+    &::before {
+        position: absolute;
+        content: '';
+        z-index: 1;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-radius: 100%;
+        background-color: $dark-blue;
+    }
+
+    //Footer wrapper
+    &__wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    //Footer title (Me contacter)
+    h2 {
+        margin: 20px 0;
+        padding: 5px;
+        font-size: 25px;
+        font-weight: bold;
+
+        //Contact icon
+        .fa-address-card {
+            margin-left: 10px;
+        }
+    }
+
+    ul {
+        margin-bottom: 40px;
+    }
+
+    li {
+        position: relative;
+
+        &::before {
+            opacity: 0;
+            position: absolute;
+            top: -2px;
+            left: 0;
+            transform: translateX(-50px);
+            z-index: 1;
+            content: '\f0da';
+            font-family: fontawesome;
+            font-size: 25px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        &:hover::before {
+            opacity: 1;
+            transform: translateX(-30px);
+        }
+
+        margin-bottom: 10px;
+        padding: 2px 0;
+        padding-right: 5px;
+        width: fit-content;
+        border-bottom: 1px solid transparent;
+        font-size: 16px;
+        transition: all 0.3s ease-in-out;
+
+        a {
+            color: $white;
+        }
+
+        i {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        //Footer links :hover
+        &:hover {
+            border-bottom: 1px solid $white;
+            transform: translateX(5px);
+        }
+    }
+
+    .copyright-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $light-blue;
+        width: 100%;
+
+        .copyright {
+            margin: 25px 0;
+        }
+    }
+}
+
+//##########
+//# TABLET #
+//##########
+@media screen and (min-width:768px) {
+    .footer {
+        h2 {
+            font-size: 40px;
+        }
+    }
+}
+
+//###########
+//# DESKTOP #
+//###########
+// @media screen and (min-width:1024px) {}

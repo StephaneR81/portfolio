@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--load all Font Awesome styles -->
+    <link href="assets/fontawesome/webfonts/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Stéphane Renard | Développeur front-end junior</title>
+</head>
+
+<body>
+    <!-- Curriculum vitae layer (hidden by default) -->
+    <div id="curriculum">
+        <embed src="./assets/documents/CV_Stephane_RENARD_Dev_Front_Full_Remote.pdf" type="application/pdf">
+    </div>
+    <!-- Site wrapper -->
+    <div id="site-wrapper">
+        <header class="header">
+            <div class="header__title">
+                <!-- Menu icons -->
+                <label for="checkboxMenu" class="header__label" id="menu-bars"><i class="fa-solid fa-bars"></i></label>
+                <label for="checkboxMenu" class="header__label inactive" id="menu-arrow"><i
+                        class="fa-solid fa-circle-arrow-up"></i></label>
+            </div>
+            <!-- Hidden checkbox used for showing/hiding the menu -->
+            <input type="checkbox" class="header__checkbox" id="checkboxMenu">
+            <!-- Top navigation menu -->
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#about"><i class="fa-solid fa-question"></i>à propos</a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-code"></i>compétences</a></li>
+                    <li><a href="#achievements"><i class="fa-solid fa-display"></i>réalisations</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-address-card"></i>contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <!-- "ABOUT" section (Picture, first name and last name) -->
+            <section class="about">
+                <img src="assets/img/avatar.png" alt="Mon avatar" width="380" height="300" loading="lazy">
+                <div class="section-container">
+                    <a id="about" class="anchor"></a>
+                    <h1>Stéphane Renard</h1>
+                    <h2>Développeur web<br />frontend - Junior</h2>
+                </div>
+            </section>
+            <!-- "INTRODUCTION" section -->
+            <section class="introducing">
+                <a id="introducing" class="anchor"></a>
+                <h3>Qui suis-je<i class="fa-solid fa-question"></i></h3>
+                <div class="section-container">
+                    <p>
+                        Bonjour, je suis Stéphane.
+                    </p>
+                    <p>
+                        j'ai récemment achevé la formation <strong>Développeur web</strong> à distance chez
+                        OpenClassrooms dans le cadre de ma reconversion professionnelle. Je suis actuellement en
+                        recherche d'une première opportunité pour travailler à distance.
+                    </p>
+                    <p>
+                        Mes expériences passées me permettent de travailler aussi bien en équipe qu'en autonomie.
+                        De nature calme et bienveillante, sérieux et persévérant, soucieux du service rendu à la
+                        clientèle, je serais ravi de rejoindre une équipe à taille humaine partageant ces valeurs.
+                    </p>
+                    <p>
+                        Si vous souhaitez prendre contact avec moi, je suis disponible et joignable par courrier
+                        électronique dans la section <a href="#contact">Contact</a>.
+                    </p>
+                </div>
+            </section>
+            <!-- "SKILLS" section -->
+            <section class="skills">
+                <a id="skills" class="anchor"></a>
+                <h3>Mes compétences<i class="fa-solid fa-code"></i></h3>
+                <div class="section-container">
+                    <p>
+                        Au cours de ma formation, j'ai réalisé différents projets professionnalisants à difficulté
+                        progressive. Ces projets vous sont présentés sous la rubrique <a
+                            href="#achievements">réalisations</a>.
+                    </p>
+                    <p>
+                        J'ai abordé les langages fondamentaux (<strong>HTML5, CSS3/SCSS, JavaScript</strong>). Les
+                        derniers projets ont fait appel à un environnement <strong>node.JS</strong>, et ont nécessité
+                        l'utilisation des
+                        bases de données <strong>MySQL</strong> et <strong>MongoDB</strong>. Ils ont également impliqué
+                        l'utilisation et la création d'une <strong>API REST</strong> implémentant des opérations <abbr
+                            title="Create Read Update Delete">C.R.U.D.</abbr>
+                    </p>
+                    <p>
+                        Je possède une première initiation au framework <strong>Angular</strong> et au langage
+                        <strong>TypeScript</strong>.
+                    </p>
+                    <h4>Langages</h4>
+                    <article class="skill">
+                        <h5><img src="assets/img/icons/HTML5_icon.svg" class="skill-icon" alt="Logo de HTML5" width="50"
+                                height="50" loading="lazy">HTML5</h5>
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                        </div>
+                    </article>
+                    <article class="skill">
+                        <h5><img src="assets/img/icons/CSS3_icon.svg" class="skill-icon" alt="Logo de CSS3" width="50"
+                                height="50" loading="lazy">CSS3</h5>
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                        </div>
+                    </article>
+                    <article class="skill">
+                        <h5><img src="assets/img/icons/SASS_icon.svg" class="skill-icon" alt="Logo de SASS" width="50"
+                                height="50" loading="lazy">SCSS</h5>
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                        </div>
+                    </article>
+                    <article class="skill">
+                        <h5><img src="assets/img/icons/javascript_icon.svg" class="skill-icon" alt="Logo de JavaScript"
+                                width="50" height="50" loading="lazy">JavaScript</h5>
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                        </div>
+                    </article>
+                    <article class="skill">
+                        <h5><img src="assets/img/icons/typescript_icon.svg" class="skill-icon" alt="Logo de TypeScript"
+                                width="50" height="50" loading="lazy">TypeScript</h5>
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                        </div>
+                    </article>
+                    <h4>Frameworks</h4>
+                    <article class="skill">
+                        <h5><img src="assets/img/icons/angular_icon.svg" class="skill-icon" alt="Logo de Angular"
+                                width="50" height="50" loading="lazy">Angular</h5>
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                        </div>
+                    </article>
+                    <article class="skill">
+                        <h5><img src="assets/img/icons/nodeJS_icon.svg" class="skill-icon" alt="Logo de Express"
+                                width="50" height="50" loading="lazy">Express</h5>
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                        </div>
+                    </article>
+                    <h4>Bases de données</h4>
+                    <article class="skill">
+                        <h5><img src="assets/img/icons/mongodb_icon.svg" class="skill-icon" alt="Logo de MongoDB"
+                                width="50" height="50" loading="lazy">MongoDB</h5>
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                        </div>
+                    </article>
+                    <article class="skill">
+                        <h5><img src="assets/img/icons/mysql_icon.svg" class="skill-icon" alt="Logo de MySQL" width="50"
+                                height="50" loading="lazy">MySQL</h5>
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                        </div>
+                    </article>
+                    <h4>Autres</h4>
+                    <article class="skill">
+                        <h5><img src="assets/img/icons/nodeJS_icon.svg" class="skill-icon" alt="Logo de node.JS"
+                                width="50" height="50" loading="lazy">node.JS</h5>
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                        </div>
+                    </article>
+                    <article class="skill">
+                        <h5><img src="assets/img/icons/github_icon.svg" class="skill-icon" alt="Logo de MySQL"
+                                width="50" height="50" loading="lazy">Git-GitHub</h5>
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- "ACHIEVEMENTS" section -->
+            <section class="achievements">
+                <a id="achievements" class="anchor"></a>
+                <h3>Mes réalisations<i class="fa-solid fa-display"></i></h3>
+                <div class="section-container">
+                    <p>
+                        Voici l'ensemble des projets réalisés durant mon parcours de formation. <br />&Agrave; noter que
+                        les trois derniers projets ne sont pas présentés sur un hébergement fonctionnel. Les
+                        instructions sont fournies dans leur dépôt GitHub respectif.
+                    </p>
+                    <div class="section-container">
+                        <!-- Full cards container -->
+                        <div class="cards">
+                            <!-- Card -->
+                            <article class="card">
+                                <figure>
+                                    <a href="https://stephaner81.github.io/RenardStephane_2_21102021/" target="_blank">
+                                        <div class="img-wrapper">
+                                            <img src="assets/img/booki.jpg" loading="lazy" alt="Image du site Booki"
+                                                width="300" height="300">
+                                        </div>
+                                    </a>
+                                    <figcaption>
+                                        <h4>Booki</h4>
+                                        <h5>Transformer une maquette en site web avec HTML et CSS</h5>
+                                    </figcaption>
+                                </figure>
+                                <!-- Hovered card content -->
+                                <div class="card-details">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <h6>Transformer une maquette en site web avec HTML et CSS</h6>
+                                    <p class="card-details-subtitle">Compétences évaluées : </p>
+                                    <ul>
+                                        <li>Intégrer du contenu conformément à une maquette</li>
+                                        <li>Implémenter une interface responsive</li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <figure>
+                                    <a href="https://stephaner81.github.io/RenardStephane_3_24112021/" target="_blank">
+                                        <div class="img-wrapper">
+                                            <img src="assets/img/ohmyfood.jpg" loading="lazy"
+                                                alt="Image du site ohmyfood" width="300" height="300">
+                                        </div>
+                                    </a>
+                                    <figcaption>
+                                        <h4>ohmyfood</h4>
+                                        <h5>Dynamiser une page web avec des animations CSS</h5>
+                                    </figcaption>
+                                </figure>
+                                <div class="card-details">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <h6>Dynamiser une page web avec des animations CSS</h6>
+                                    <p class="card-details-subtitle">Compétences évaluées : </p>
+                                    <ul>
+                                        <li>Mettre en &oelig;uvre des effets CSS graphiques avancés</li>
+                                        <li>Utiliser un système de gestion de versions pour le suivi du projet et son
+                                            hébergement</li>
+                                        <li>Assurer la cohérence graphique d'un site web</li>
+                                        <li>Mettre en place son environnement frontend</li>
+                                        <li>Mettre en place une structure de navigation pour un site web</li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <figure>
+                                    <a href="https://stephaner81.github.io/RenardStephane_4_20122021_optimized/"
+                                        target="_blank">
+                                        <div class="img-wrapper">
+                                            <img src="assets/img/lachouetteagence.jpg" loading="lazy"
+                                                alt="Image du site La Chouette Agence" width="300" height="300">
+                                        </div>
+                                    </a>
+                                    <figcaption>
+                                        <h4>La Chouette Agence</h4>
+                                        <h5>Optimiser un site web existant</h5>
+                                    </figcaption>
+                                </figure>
+                                <div class="card-details">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <h6>Optimiser un site web existant</h6>
+                                    <p class="card-details-subtitle">Compétences évaluées : </p>
+                                    <ul>
+                                        <li>Optimiser la taille et la vitesse d'un site web</li>
+                                        <li>Assurer l'accessibilité d'un site web</li>
+                                        <li>Réaliser une recherche de bonnes pratiques en développement web</li>
+                                        <li>&Eacute;crire du code HTML et CSS maintenable</li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <figure>
+                                    <a href="https://github.com/StephaneR81/RenardStephane_5_14012022_Dynamic"
+                                        target="_blank">
+                                        <div class="img-wrapper">
+                                            <img src="assets/img/kanap.jpg" loading="lazy" alt="Image du site Kanap"
+                                                width="300" height="300">
+                                        </div>
+                                    </a>
+                                    <figcaption>
+                                        <h4>Kanap</h4>
+                                        <h5>Construire un site e-commerce avec JavaScript</h5>
+                                    </figcaption>
+                                </figure>
+                                <div class="card-details">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <h6>Construire un site e-commerce avec JavaScript</h6>
+                                    <p class="card-details-subtitle">Compétences évaluées : </p>
+                                    <ul>
+                                        <li>Valider des données issues de sources externes</li>
+                                        <li>Gérer des évènements JavaScript</li>
+                                        <li>Créer un plan de test pour une application</li>
+                                        <li>Intéragir avec un web service avec JavaScript</li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <figure>
+                                    <a href="https://github.com/StephaneR81/RenardStephane_6_18022022-_Dynamic"
+                                        target="_blank">
+                                        <div class="img-wrapper">
+                                            <img src="assets/img/hottakes.jpg" loading="lazy"
+                                                alt="Image du site Hot Takes" width="300" height="300">
+                                        </div>
+                                    </a>
+                                    <figcaption>
+                                        <h4>Hot Takes</h4>
+                                        <h5>Construire une <abbr title="Application Programming Interface">API</abbr>
+                                            sécurisée pour une application d'avis gastronomiques</h5>
+                                    </figcaption>
+                                </figure>
+                                <div class="card-details">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <h6>Construire une <abbr title="Application Programming Interface">API</abbr>
+                                        sécurisée
+                                        pour une application
+                                        d'avis gastronomiques
+                                    </h6>
+                                    <p class="card-details-subtitle">Compétences évaluées : </p>
+                                    <ul>
+                                        <li>Implémenter un modèle logique de données conformément à la réglementation
+                                        </li>
+                                        <li>Mettre en &oelig;uvre des opérations <abbr
+                                                title="Create Read Update Delete">CRUD</abbr> de manière sécurisée</li>
+                                        <li>Stocker des données de manière sécurisée</li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <figure>
+                                    <a href="https://github.com/StephaneR81/StephaneR81-RenardStephane_7_31032022"
+                                        target="_blank">
+                                        <div class="img-wrapper">
+                                            <img src="assets/img/groupomania.jpg" loading="lazy"
+                                                alt="Image du site Groupomania" width="300" height="300">
+                                        </div>
+                                    </a>
+                                    <figcaption>
+                                        <h4>Groupomania</h4>
+                                        <h5>Créer un réseau social d'entreprise</h5>
+                                    </figcaption>
+                                </figure>
+                                <div class="card-details">
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                    <h6>Créer un réseau social d'entreprise</h6>
+                                    <p class="card-details-subtitle">Compétences évaluées : </p>
+                                    <ul>
+                                        <li>Authentifier un utilisateur et maintenir sa session</li>
+                                        <li>Implémenter un stockage de données sécurisé en utilisant une base de données
+                                        </li>
+                                        <li>Développer l'interface d'un site web grâce à un framework frontend</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- "FOOTER" section -->
+        <footer class="footer">
+            <!-- Footer wrapper -->
+            <div class="footer__wrapper">
+                <h2 class="footer__contact">Me contacter <i class="fa-solid fa-address-card"></i></h2>
+                <a id="contact" class="anchor"></a>
+                <!-- Bottom navigation menu -->
+                <nav class="footer__nav">
+                    <ul>
+                        <li><a href="mailto:stephane.rene.alfred@gmail.com"><i class="fa-solid fa-at"></i>Email</a></li>
+                        <li><a href="https://www.linkedin.com/in/Stephane81" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+                        <li><a href="https://github.com/StephaneR81" target="_blank"><i
+                                    class="fa-brands fa-github-square"></i>GitHub</a></li>
+                        <li><a id="curriculum-btn" href="#"><i class="fa-solid fa-briefcase"></i>Curriculum
+                                vit&aelig;</a></li>
+                    </ul>
+                </nav>
+                <div class="copyright-wrapper">
+                    <p class="copyright">Stéphane Renard &copy; 2022</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
